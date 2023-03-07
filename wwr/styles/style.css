@@ -308,6 +308,38 @@ footer {
     transform: scale(1.1);
 }
 
+/*page 2 css*/
+
+#rivers-content {
+    background-color: rgba(186, 234, 237, 0.923);
+    
+}
+
+#rivers-box {
+    background-color: bisque;height: 450px;width: auto;
+}
+
+#little-img {
+    
+    display:block;
+    margin: 50px auto;
+    /*border-radius: 10px;color: rgb(80, 104, 123);*/
+    border: #6f7364 8px solid;
+    
+
+}
+#little-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.rivers-grid {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
 /* Media queries always need to be after all the other CSS. 
 Don't add any CSS after the media query later either*/
 
