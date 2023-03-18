@@ -1,0 +1,161 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat&display=swap');
+
+
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;     
+}
+
+body {
+    background-color: #7678ed; 
+    font-family: "bartlow condensed";
+    font-size: 22px;
+    margin:0;
+    padding: 0;
+    
+}
+
+#aboutme-grid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto;
+    
+
+}
+
+header {
+    display:grid;
+    grid-template-columns: 150px auto;
+    background: #d4ac0d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+nav a { 
+    text-align: center;
+    text-decoration:none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #3d348b;
+    color: white;
+    
+} 
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: double;
+    
+    
+}
+/*#image-box 
+    grid-column: 3/9;
+    grid-row: 2/5;
+    
+}*/
+
+#aboutme-img {
+    grid-column: 3/9;
+    grid-row: 2/6;
+
+    
+}
+
+#image-box {
+    
+    background-color: #433f31;
+    height: 500px;
+    grid-column: 1/13;
+    grid-row: 1/6;
+
+}
+
+
+#aboutme-msg {
+    grid-column: 3/9;
+    grid-row: 6/8;
+    
+}
+
+#aboutme-msg h4{
+    color:#3d348b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#aboutme-msg p{
+    color:#3d348b;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.aboutme-title {
+    color: #3d348b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+#work-grid {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: repeat(9, 1fr);
+}
+
+#work-box {
+    grid-column: 2/5;
+    grid-row: 8/11;
+}
+
+.work-achievements {
+    grid-column: 8/12;
+    grid-row: 8/11;
+}
+.work-achievements h2{
+    color: #3d348b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.work-achievements p{
+    color: #3d348b;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+footer {
+    background-color:#d4ac0d;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #3d348b;
+
+} 
+
+footer a {
+    text-decoration:none;
+}
+footer p{
+    color:#3d348b
+}
+footer .social img {
+    padding-top: 15px;
+}
+
+
+
+
+
+

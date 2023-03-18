@@ -209,7 +209,7 @@ footer p {
 to the following selectors:*/
 
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration:none;
     color: white;
 }
 
