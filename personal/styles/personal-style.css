@@ -13,7 +13,7 @@
 
 body {
     background-color: #7678ed; 
-    font-family: "bartlow condensed";
+    font-family: 'bartlow condensed';
     font-size: 22px;
     margin:0;
     padding: 0;
@@ -32,6 +32,7 @@ header {
     display:grid;
     grid-template-columns: 150px auto;
     background: #d4ac0d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -57,20 +58,25 @@ nav a:hover {
     height: 100px;
     border-radius: 50%;
     border-style: double;
-    
-    
+       
 }
-/*#image-box 
-    grid-column: 3/9;
-    grid-row: 2/5;
-    
-}*/
 
 #aboutme-img {
     grid-column: 3/9;
     grid-row: 2/6;
+   
+}
 
+#aboutme-img:hover {
+    opacity: 6;
+    transform: scale(1.1);
     
+}
+
+#aboutme-img {
+    border: 10px solid #3d348b;
+    box-shadow: 5px 5px 10px whitesmoke;
+    box-sizing: border-box;
 }
 
 #image-box {
@@ -110,6 +116,16 @@ nav a:hover {
     grid-template-rows: repeat(9, 1fr);
 }
 
+.work-img:hover {
+    opacity: 6;
+    transform: scale(1.1);
+}
+
+.work-img{
+    border: 10px solid #3d348b;
+    box-shadow: 5px 5px 10px whitesmoke;
+    box-sizing: border-box;
+}
 #work-box {
     grid-column: 2/5;
     grid-row: 8/11;
@@ -135,6 +151,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer p a:hover {
@@ -155,7 +172,51 @@ footer .social img {
 }
 
 
+/* media query*/
 
+@media screen and (max-width: 900px) {
+    #aboutme-grid, #work-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #aboutme-img {
+        margin-top: 0;
+        width: auto;
+    }
+    #aboutme-msg {
+        margin-top: 0;
+    }
+    #aboutme-msg h4 {
+        display: none;
+    }
+    .aboutme-title {
+        font-size: 25px;
+        
+    }
+    #work-box { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #image-box {
+        display: none;
+    }
+    #work-box, .work-achievements {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+            
 
 
 
