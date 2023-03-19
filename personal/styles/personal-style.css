@@ -17,6 +17,8 @@ body {
     font-size: 22px;
     margin:0;
     padding: 0;
+
+
     
 }
 
@@ -58,6 +60,9 @@ nav a:hover {
     height: 100px;
     border-radius: 50%;
     border-style: double;
+    border: 5px solid whitesmoke;
+    box-sizing: border-box;
+    margin-top: 3px;
        
 }
 
