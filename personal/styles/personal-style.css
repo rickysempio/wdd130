@@ -202,17 +202,26 @@ footer .social img {
 #portfolio-img:hover{
     opacity: 6;
     transform:scale(1.1);
-
 }
 
+#portfolio-title{
+    font-family: 'barlow condensed', Tahoma, sans-serif;
+    font-size: 1.3em;
+}
 #portfolio-msg{
     grid-column: 6/9;
-    font-size: 1.1em;
     margin-top: 20px;
-    color: whitesmoke;   
-
+    color: whitesmoke; 
+    font-family: montserrat, Arial, sans-serif;
+    
+}
+#portfolio-msg h1{
+    font-family:'barlow condensed', Tahoma, sans-serif;
 }
 
+#portfolio-msg h2{
+    font-family:'barlow condensed', Tahoma, sans-serif;
+}
 
 #portfolio-box{
     background-color: #433f31;
@@ -228,7 +237,6 @@ footer .social img {
     column-gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 1.1em;
     color: whitesmoke;
     
 }
@@ -253,9 +261,16 @@ footer .social img {
     border: 10px solid  #d4ac0d;
     box-sizing: border-box;
     padding:10px 10px;
-    background-color: #3d348b;
-      
+    background-color: #3d348b;     
 }
+
+#skills h2 {
+    font-family:'barlow condensed', Tahoma, sans-serif;
+}
+
+#skills p{
+    font-family:montserrat, Arial, sans-serif;
+} 
 
 #certification{
     grid-column: 4/7;
@@ -264,6 +279,13 @@ footer .social img {
     padding:10px 10px;
     background-color: #3d348b;
     
+}
+#certification h2, h3{
+    font-family:'barlow condensed', Tahoma, sans-serif;
+}
+
+#certification p{
+    font-family:montserrat, Arial, sans-serif;
 }
 
 #trainings {
@@ -274,7 +296,12 @@ footer .social img {
     background-color: #3d348b;
     
 }
-
+#trainings h2, h3{
+    font-family:'barlow condensed', Tahoma, sans-serif;
+}
+#trainings p{
+    font-family:montserrat, Arial, sans-serif;
+}
 
 /*page 3 component form*/
 
