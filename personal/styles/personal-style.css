@@ -82,13 +82,14 @@ nav a:hover {
     border: 10px solid #3d348b;
     box-shadow: 5px 5px 10px whitesmoke;
     box-sizing: border-box;
+
     
 }
 
 #image-box {
     
     background-color: #433f31;
-    height: 500px;
+    height: 520px;
     grid-column: 1/13;
     grid-row: 1/6;
 
@@ -115,16 +116,9 @@ nav a:hover {
 .aboutme-title {
     color: whitesmoke;
     font-family: 'barlow condensed', Tahoma, sans-serif;
-    font-size: 1.5;
-
-    
-    
+    font-size: 1.5;   
 }
-/*#work-grid {
-    display:grid;
-    grid-template-columns: repeat(12, 1fr) ;
-    grid-template-rows: repeat(9, 1fr);
-}*/
+
 
 .work-img:hover {
     opacity: 6;
@@ -135,6 +129,7 @@ nav a:hover {
     border: 10px solid #3d348b;
     box-shadow: 5px 5px 10px whitesmoke;
     box-sizing: border-box;
+    
 }
 #work-box {
     grid-column: 2/5;
@@ -189,37 +184,95 @@ footer .social img {
 #portfolio-background{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    justify-items: center;   
+    background-color: #433f31; height: 590px;
 }
 
-#portfolio-box{
-    grid-column: 2/5;
+
+#portfolio-img{
+    grid-column: 2/5;  
+    margin:50px 50px;
+    border:10px solid #3d348b;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px whitesmoke;
+    
+}
+
+#portfolio-img:hover{
+    opacity: 6;
+    transform:scale(1.1);
+
 }
 
 #portfolio-msg{
     grid-column: 6/9;
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: whitesmoke;   
+
+}
+
+
+#portfolio-box{
+    background-color: #433f31;
 }
 
 .skills-grid{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
-}
-
-#work-img {
-    grid-column: 3/8;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.1em;
+    color: whitesmoke;
     
 }
 
-#skills {
-    grid-column: 1/4;
+#skills-box {
+    grid-column: 3/8;  
 }
 
-#certifications{
+.skills-img {
+    grid-column: 3/8;
+    border: 10px solid #3d348b;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px;    
+}
+
+.skills-img:hover{
+    opacity: 6;
+    transform: scale(1.1);
+}
+#skills {
+    grid-column: 1/4;
+    border: 10px solid  #d4ac0d;
+    box-sizing: border-box;
+    padding:10px 10px;
+    background-color: #3d348b;
+      
+}
+
+#certification{
     grid-column: 4/7;
+    border: 10px solid #d4ac0d;
+    box-sizing: border-box;
+    padding:10px 10px;
+    background-color: #3d348b;
+    
 }
 
 #trainings {
     grid-column: 7/10;
+    border: 10px solid #d4ac0d;
+    box-sizing: border-box;
+    padding:10px 10px;
+    background-color: #3d348b;
+    
 }
 
 
@@ -301,6 +354,17 @@ input[type=text], select, textarea {
     }
     footer {
         margin-top: 25px;
+    }
+
+    /*subpage 2 media querry*/
+
+    #portfolio-background{
+        display: block;
+        height: auto;
+    }
+    .skills-grid {
+        display: block;
+        height: auto;
     }
 }
             
