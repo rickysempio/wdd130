@@ -120,11 +120,11 @@ nav a:hover {
     
     
 }
-#work-grid {
+/*#work-grid {
     display:grid;
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: repeat(9, 1fr);
-}
+}*/
 
 .work-img:hover {
     opacity: 6;
@@ -182,6 +182,44 @@ footer p{
 }
 footer .social img {
     padding-top: 15px;
+}
+
+/* Subpage 2 css*/
+
+#portfolio-background{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+#portfolio-box{
+    grid-column: 2/5;
+}
+
+#portfolio-msg{
+    grid-column: 6/9;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+}
+
+#work-img {
+    grid-column: 3/8;
+    
+}
+
+#skills {
+    grid-column: 1/4;
+}
+
+#certifications{
+    grid-column: 4/7;
+}
+
+#trainings {
+    grid-column: 7/10;
 }
 
 
