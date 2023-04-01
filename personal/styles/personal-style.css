@@ -26,7 +26,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50px auto;
     
-
 }
 
 header {
@@ -116,7 +115,7 @@ nav a:hover {
 .aboutme-title {
     color: whitesmoke;
     font-family: 'barlow condensed', Tahoma, sans-serif;
-    font-size: 1.5;   
+    font-size: 1.5em;   
 }
 
 
@@ -253,8 +252,8 @@ footer .social img {
 }
 
 .skills-img:hover{
-    opacity: 6;
-    transform: scale(1.1);
+    opacity:6;
+    transform:scale(1.1);
 }
 #skills {
     grid-column: 1/4;
@@ -302,6 +301,96 @@ footer .social img {
 #trainings p{
     font-family:montserrat, Arial, sans-serif;
 }
+
+/*page 3 css*/
+
+#contact-background {
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100px auto 100px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#contact-box {
+    grid-column: 2/5;
+    grid-row: 2/3; 
+}
+
+#contact-img {
+    border: 10px solid #3d348b;  
+    box-sizing: border-box; 
+    box-shadow:10px 10px 15px whitesmoke;  
+}
+
+#contact-img:hover{ 
+    opacity: 6;
+    transform:scale(1.1);
+}
+
+#contact-background section {
+    grid-column: 6/9;
+    grid-row: 2/3;
+    border: 10px solid #3d348b;
+    padding: 10px;
+    background-color: #3d348b;
+
+}
+
+#contact-background h3 {
+    font-family:'barlow condensed', Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: whitesmoke;
+}
+
+#contact-background p {
+    font-family: montserrat, Arial, sans-serif;
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+.send-message-grid {
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+
+    
+
+}
+
+.send-message-img {
+    grid-column: 3/8;
+    border: 10px solid #3d348b;
+    box-shadow: 10px 10px 15px whitesmoke;
+    box-sizing: border-box;
+}
+
+.send-message-img:hover {
+    opacity: 6;
+    transform: scale(1.1);
+}
+
+
+.container {
+    grid-column: 3/8;
+}
+
+.send-message-grid h3 {
+    grid-column: 3/4;
+    font-family:'barlow condensed', Tahoma, sans-serif;
+    margin-top: 100px;
+    color: whitesmoke;
+    
+    
+
+
+}
+
 
 /*page 3 component form*/
 
@@ -393,7 +482,20 @@ input[type=text], select, textarea {
         display: block;
         height: auto;
     }
+    
+    /* subpage 3 media query*/
+    
+    #contact-background {
+        display:block;
+        height: auto;
+    }
+    
+    .send-message-grid {
+        display:block;
+        height: auto;
+    }
 }
+
             
 
 
