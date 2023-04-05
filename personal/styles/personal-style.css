@@ -9,23 +9,26 @@
     max-width: 1600px;
     margin: 0 auto;  
     background-color: #7678ed;   
+
 }
 
 body {
     font-family:'barlow condensed'; 
     font-size: 22px;
     margin:0;
-    padding: 0;
-
-
-    
+    padding: 0;   
 }
 
 #aboutme-grid {
     display:grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 50px auto;
-    
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+       
+       
 }
 
 header {
@@ -66,9 +69,11 @@ nav a:hover {
 }
 
 #aboutme-img {
-    grid-column: 3/9;
+    grid-column: 3/8;
     grid-row: 2/6;
-   
+    margin-top: 20px;
+    width: 100%;
+  
 }
 
 #aboutme-img:hover {
@@ -85,18 +90,21 @@ nav a:hover {
     
 }
 
-#image-box {
-    
+#image-box{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
     background-color: #433f31;
-    height: 520px;
-    grid-column: 1/13;
-    grid-row: 1/6;
-
+    height: 590px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    
 }
 
 
 #aboutme-msg {
-    grid-column: 3/9;
+    grid-column: 3/8;
     grid-row: 6/8;
     
 }
@@ -128,16 +136,19 @@ nav a:hover {
     border: 10px solid #3d348b;
     box-shadow: 5px 5px 10px whitesmoke;
     box-sizing: border-box;
-    
+    grid-column: 2/5;
+    margin-top: 100px;
+    width: 100%;
 }
 #work-box {
-    grid-column: 2/5;
-    grid-row: 8/11;
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .work-achievements {
-    grid-column: 8/12;
-    grid-row: 8/11;
+    grid-column: 6/9;
+    margin-top: 100px;
+
 }
 .work-achievements h2{
     color: whitesmoke;
@@ -222,10 +233,6 @@ footer .social img {
     font-family:'barlow condensed', Tahoma, sans-serif;
 }
 
-#portfolio-box{
-    background-color: #433f31;
-}
-
 .skills-grid{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -248,7 +255,8 @@ footer .social img {
     grid-column: 3/8;
     border: 10px solid #3d348b;
     box-sizing: border-box;
-    box-shadow: 10px 10px 15px;    
+    box-shadow: 10px 10px 15px; 
+    margin-top: 50px;
 }
 
 .skills-img:hover{
@@ -260,8 +268,10 @@ footer .social img {
     border: 10px solid  #d4ac0d;
     box-sizing: border-box;
     padding:10px 10px;
-    background-color: #3d348b;     
+    background-color: #3d348b;    
+    margin-top: 50px; 
 }
+
 
 #skills h2 {
     font-family:'barlow condensed', Tahoma, sans-serif;
@@ -277,8 +287,10 @@ footer .social img {
     box-sizing: border-box;
     padding:10px 10px;
     background-color: #3d348b;
+    margin-top: 50px;
     
 }
+
 #certification h2, h3{
     font-family:'barlow condensed', Tahoma, sans-serif;
 }
@@ -293,8 +305,9 @@ footer .social img {
     box-sizing: border-box;
     padding:10px 10px;
     background-color: #3d348b;
-    
+    margin-top: 50px;
 }
+
 #trainings h2, h3{
     font-family:'barlow condensed', Tahoma, sans-serif;
 }
@@ -433,7 +446,7 @@ input[type=text], select, textarea {
 /* media query*/
 
 @media screen and (max-width: 900px) {
-    #aboutme-grid, #work-grid {
+    #aboutme-grid{
         display: block;
         height: auto;
     }
@@ -463,7 +476,8 @@ input[type=text], select, textarea {
         width: 60%;
     }
     #image-box {
-        display: none;
+        display: block;
+        height: auto;
     }
     #work-box, .work-achievements {
         width: 80%;
